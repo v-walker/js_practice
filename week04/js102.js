@@ -209,8 +209,6 @@ leetspeak2('Leet');
 // Long-long Vowels
 // Write a function, which is given a string, return the result of extending any long vowels to the length of 5.
 
-
-    // this is not working... keep debugging this...
 function longLongVowels(string) {
     lowerString = string.toLowerCase();
     var vowels = ["a", "e", "i", "o", "u"];
@@ -232,8 +230,7 @@ function longLongVowels(string) {
     console.log(outputString);
 }
     
-
-longLongVowels("Moose")
+longLongVowels("Sweet cookies")
 
 // Sum the numbers
 // Write a function sumNumbers which is given an array of numbers and returns the sum of the numbers.

@@ -212,67 +212,26 @@ leetspeak2('Leet');
 
     // this is not working... keep debugging this...
 function longLongVowels(string) {
-    var stringLower = string.toLowerCase();
-    // var doubleVowels = ["aa", "ee", "ii", "oo", "uu"];
+    lowerString = string.toLowerCase();
+    var vowels = ["a", "e", "i", "o", "u"];
     var longerVowels = ["aaaaa", "eeeee", "iiiii", "ooooo", "uuuuu"];
-    var outputString = ""
-    var index = 0
+    var outputString = ''
 
-    while (index < stringLower) {
-        var char = stringLower[index]
-        if (index + 1 == stringLower.length) {
-            outputString += char;
+    for (var index = 0; index < lowerString.length; index++) {
+        var letter = lowerString[index];
+        if (index === lowerString.length) {
+            outputString += letter;
             break;
         }
-        else if (char == "a" && stringLower[index + 1] == "a") {
-            char = longerVowels[0];
-            if (index == stringLower.length) {
-                break;
-            }
-            else {
-                index++;
-            }
-        }
-        else if (char == "e" && stringLower[index + 1] == "e") {
-            char = longerVowels[1];
-            if (index == stringLower.length) {
-                break;
-            }
-            else {
-                index++;
-            }
-        }
-        else if (char == "i" && stringLower[index + 1] == "i") {
-            char = longerVowels[2];
-            if (index == stringLower.length) {
-                break;
-            }
-            else {
-                index++;
-            }
-        }
-        else if (char == "o" && stringLower[index + 1] == "o") {
-            char = longerVowels[3];
-            if (index == stringLower.length) {
-                break;
-            }
-            else {
-                index++;
-            }
-        }
-        else if (char == "u" && stringLower[index + 1] == "u") {
-            char = longerVowels[4];
-            if (index == stringLower.length) {
-                break;
-            }
-            else {
-                index++;
-            }
-        }
-        outputString += char;
-    }    
-    console.log(outputString)
+        else if (vowels.includes(letter) && lowerString[index + 1] === letter) {
+            var vowelIndex = vowels.indexOf(letter);
+            outputString += (longerVowels[vowelIndex]);
+            index++;
+        } else outputString += letter;
+    }
+    console.log(outputString);
 }
+    
 
 longLongVowels("Moose")
 

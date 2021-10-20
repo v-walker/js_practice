@@ -1,11 +1,10 @@
 const express = require('express');
-
 const app = express();
-
 const port = 3000;
 
 // 1. Hello World
 // Make an express program that will display "Hello, world!" at the root URL: /
+
 app.get('/', (req, res) => {
     res.send('Hello, World!');
 });
@@ -13,7 +12,6 @@ app.get('/', (req, res) => {
 // 2. Routes
 // Add to your program the following pages:
 // "Meow" at the URL /cats "Woof" at the URL /dogs "Living together" at the URL /cats_and_dogs
-
 
 app.get('/cats', (req, res) => {
     res.send('Meow');

@@ -50,6 +50,7 @@ let songs = [
 app.get('/', (req, res) => {
     res.send(`
     <h1>Fleetwood Mac</h1>
+    <p>Explore Fleetwood Mac's <a href="/albums">albums</a>.</p>
     <p><b>Fleetwood Mac</b> are a British-American rock band, formed in London in 1967. Fleetwood Mac were founded by guitarist Peter Green, drummer Mick Fleetwood and guitarist Jeremy Spencer, before bassist John McVie joined the line-up for their self-titled debut album. Danny Kirwan joined as a third guitarist in 1968. Keyboardist Christine Perfect, who contributed as a session musician from the second album, married McVie and joined in 1970.</p>
     <br><br>
     <figure>
@@ -79,7 +80,7 @@ app.get('/', (req, res) => {
     // The Carter
     // Free Weezy
 
-let listOfAlbums = ``;
+let listOfAlbums = `<li>Back to <a href="/">Home</a>`;
 for (album of songs) {
     listOfAlbums += `<li>Album: <a href="/albums/${album.index}">${album.name}</a></li>`
 };

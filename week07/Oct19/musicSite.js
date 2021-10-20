@@ -80,7 +80,7 @@ app.get('/', (req, res) => {
     // The Carter
     // Free Weezy
 
-let listOfAlbums = `<li>Back to <a href="/">Home</a>`;
+let listOfAlbums = `<li>Back to <a href="/">Home</a></li>`;
 for (album of songs) {
     listOfAlbums += `<li>Album: <a href="/albums/${album.index}">${album.name}</a></li>`
 };

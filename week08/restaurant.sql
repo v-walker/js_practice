@@ -1,0 +1,43 @@
+-- CREATE TABLE restaurant (
+--     id SERIAL NOT NULL PRIMARY KEY,
+--     name varchar(25),
+--     distance integer,
+--     stars integer,
+--     category varchar(20),
+--     favoriteDish varchar(50),
+--     takeout boolean,
+--     dateLastAte date
+-- );
+
+-- INSERT INTO restaurant VALUES 
+--     (DEFAULT, 'Spice of Thai', 5, 5, 'Thai', 'Green Curry Chicken', TRUE, '2021-9-6'),
+--     (DEFAULT, 'Senor Patron', 2, 4, 'Mexican', 'Acapulco Tacos', TRUE, '2021-10-16'),
+--     (DEFAULT, 'Bambinellis Italian', 1, 4, 'Italian', 'Eggplant Parmesan', TRUE, '2021-8-3'),
+--     (DEFAULT, 'From the Earth', 1, 5, 'American', 'Duck Confit', TRUE, '2021-10-20'),
+--     (DEFAULT, 'The Mill Kitchen and Bar', 5, 4, 'American', 'Mill Burger', TRUE, '2021-3-20'),
+--     (DEFAULT, 'Osteria Mattone', 5, 5, 'Italian', 'Frutti Di Mare', TRUE, '2021-2-15'),
+--     (DEFAULT, 'JP Sushi', 1, 5, 'Japanese', 'Salmon Teriyaki', TRUE, '2021-9-20'),
+--     (DEFAULT, 'Spiced Right Ribhouse', 5, 4, 'Barbecue', 'Fried Chicken Taco', TRUE, '2021-1-10'),
+--     (DEFAULT, 'Kale Me Crazy', 2, 4, 'Health Food', 'Quinoa Bowl', TRUE, '2021-7-1'),
+--     (DEFAULT, 'Village Burger', 2, 5, 'American', 'House Burger', TRUE, '2021-8-11'),
+--     (DEFAULT, 'Adeles on Canton', 6, 5, 'Cajun', 'Shrimp and Grits', TRUE, '2021-6-18'),
+--     (DEFAULT, 'The Pearl', 2, 4, 'Chinese', 'General Tsos Chicken', TRUE, '2021-5-2'),
+--     (DEFAULT, 'Lolas Burger/Tequila Bar', 6, 5, 'American', 'Empanadas', TRUE, '2021-5-20');
+
+-- SELECT name, stars FROM restaurant WHERE stars = 5;
+-- SELECT * FROM restaurant WHERE name = 'JP Sushi';
+-- SELECT * FROM restaurant WHERE category = 'Barbecue';
+-- SELECT * FROM restaurant WHERE takeout = TRUE;
+-- SELECT * FROM restaurant WHERE takeout = TRUE and category = 'Barbecue';
+-- SELECT * FROM restaurant WHERE distance <= 2;
+-- SELECT * FROM restaurant WHERE datelastate >= '2021-10-18';
+-- SELECT * FROM restaurant WHERE datelastate < '2021-10-18' and stars = 5;
+
+-- SELECT * FROM restaurant ORDER BY distance ASC;
+-- SELECT * FROM restaurant ORDER BY distance ASC LIMIT 2;
+-- SELECT * FROM restaurant ORDER BY stars DESC LIMIT 2;
+-- SELECT * FROM restaurant WHERE distance <= 2 ORDER BY stars DESC LIMIT 2;
+-- SELECT COUNT(*) FROM restaurant;
+-- SELECT COUNT(*) FROM restaurant GROUP BY category;
+-- SELECT AVG(stars) FROM restaurant;
+-- SELECT MAX(stars) FROM restaurant GROUP BY category;

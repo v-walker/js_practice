@@ -1,10 +1,27 @@
- category |        avg         
-----------+--------------------
- American | 3.7857142857142857
- Mexican  | 2.3333333333333333
- Cajun    | 5.0000000000000000
- Thai     | 3.6666666666666667
- Barbeque | 5.0000000000000000
- Italian  | 3.6250000000000000
-(6 rows)
+           name            |      name       
+---------------------------+-----------------
+ CSS Tricks Blog Layout    | CSS
+ CSS Tricks Blog Layout    | HTML
+ Catch the Monster Game    | Python
+ Catch the Monster Game    | Objects
+ Catch the Monster Game    | PyGame
+ Medium Blog Layout        | HTML
+ Medium Blog Layout        | CSS
+ Modal Dialog              | HTML
+ Modal Dialog              | CSS
+ Mozilla Front Page        | HTML
+ Mozilla Front Page        | Bootstrap
+ Mozilla Front Page        | CSS
+ Personal Website          | HTML
+ Personal Website          | CSS
+ Phone Book                | Pickle
+ Phone Book                | Python
+ Phone Book                | File IO
+ RPG Hero Game             | Objects
+ RPG Hero Game             | Python
+ School Bus                | CSS
+ School Bus                | HTML
+ Turtle Graphics Exercises | Python
+ Turtle Graphics Exercises | Turtle Graphics
+(23 rows)
 

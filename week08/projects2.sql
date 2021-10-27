@@ -39,11 +39,23 @@
 -- ORDER BY project.name;
 
 -- List all the distinct techs that are used by at least one project.
-
+-- SELECT DISTINCT tech_id, tech.name FROM project_uses_tech
+-- INNER JOIN tech ON project_uses_tech.tech_id = tech.id;
 
 -- List all the distinct techs that are not used by any projects.
+-- SELECT tech.name FROM tech 
+-- WHERE tech.id NOT IN 
+-- (SELECT tech_id FROM project_uses_tech);
+
 -- List all the distinct projects that use at least one tech.
+-- SELECT DISTINCT project_id, project.name FROM project_uses_tech
+-- INNER JOIN project ON project_uses_tech.project_id = project.id;
+
 -- List all the distinct projects that use no tech.
+SELECT project.name from project
+WHERE project.id NOT IN
+(SELECT project_id FROM project_uses_tech);
+
 -- Order the projects by how many tech it uses.
 -- Order the tech by how many projects use it.
 -- What is the average number of techs used by a project?

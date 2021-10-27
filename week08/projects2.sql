@@ -52,10 +52,20 @@
 -- INNER JOIN project ON project_uses_tech.project_id = project.id;
 
 -- List all the distinct projects that use no tech.
-SELECT project.name from project
-WHERE project.id NOT IN
-(SELECT project_id FROM project_uses_tech);
+-- SELECT project.name from project
+-- WHERE project.id NOT IN
+-- (SELECT project_id FROM project_uses_tech);
 
 -- Order the projects by how many tech it uses.
+-- SELECT project.name, COUNT(tech_id) FROM project
+-- INNER JOIN project_uses_tech ON project.id = project_uses_tech.project_id
+-- GROUP BY project.name
+-- ORDER BY COUNT(tech_id) DESC;
+
 -- Order the tech by how many projects use it.
+-- SELECT tech.name, COUNT(project_id) FROM tech
+-- INNER JOIN project_uses_tech ON tech.id = project_uses_tech.tech_id
+-- GROUP BY tech.name
+-- ORDER BY COUNT(project_id) DESC;
+
 -- What is the average number of techs used by a project?

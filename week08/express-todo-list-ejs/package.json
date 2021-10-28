@@ -1,0 +1,24 @@
+{
+  "name": "forms-plan",
+  "version": "1.0.0",
+  "description": "Today's homework is to build a todo list.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "pg-promise": "^10.11.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/veros-labs/express-todo-list-ejs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/veros-labs/express-todo-list-ejs/issues"
+  },
+  "homepage": "https://github.com/veros-labs/express-todo-list-ejs#readme"
+}

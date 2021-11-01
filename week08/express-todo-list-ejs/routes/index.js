@@ -11,7 +11,7 @@ router.get("/todos", async (req, res) => {
   let records = await db.query(`SELECT * FROM todos`)
   
   res.json(records);
-});
+}); 
 
 // GET /todos/:id - get one todo list item by id
 router.get("/todos/:id", async (req, res) => {

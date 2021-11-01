@@ -123,20 +123,20 @@ const listTodos = (records) => {
                 <div class="col-10">
 
                     <div id="editContainer" class="input-group">
-                    <div class="input-group-prepend ">
-                        <span class="input-group-text h-100">Todo</span>
+                        <div class="input-group-prepend">
+                            <span class="input-group-text h-100">Todo</span>
                         </div>
 
-                    <textarea name="task" id="update-${item.id}"
-                    class="form-control" 
-                    aria-label="With textarea"
-                    placeholder="Edit a todo item...">${item.description}</textarea>
+                        <textarea name="task" id="update-${item.id}"
+                        class="form-control" 
+                        aria-label="With textarea"
+                        placeholder="Edit a todo item...">${item.description}</textarea>
                         <div class="input-group-append">
                             <button class="btn btn-outline-info h-100" type="submit" id="${item.id}">Edit</button>
                         </div>
                         <div class="input-group-append">
                             <button class="btn btn-outline-danger h-100" type="button" id="${item.id}">Cancel</button>
-                    </div>
+                        </div>
                     </div>
                 </div>
             </div>
